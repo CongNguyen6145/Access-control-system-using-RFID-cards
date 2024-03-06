@@ -1,0 +1,10 @@
+../Core/Src/iot_connect.c:49:5:platform_connect	40	static
+../Core/Src/iot_connect.c:99:5:platform_disconnect	16	static
+../Core/Src/iot_connect.c:108:9:platform_receive	32	static
+../Core/Src/iot_connect.c:123:9:platform_send	32	static
+../Core/Src/iot_connect.c:137:10:GetCurrentTimeStamp	8	static
+../Core/Src/iot_connect.c:142:6:http_init	4	static
+../Core/Src/iot_connect.c:147:6:http_get	152	static
+../Core/Src/iot_connect.c:232:5:http_post	184	static
+../Core/Src/iot_connect.c:339:6:httpHandleTask	400	static
+../Core/Src/iot_connect.c:391:6:LWIPTask	16	static

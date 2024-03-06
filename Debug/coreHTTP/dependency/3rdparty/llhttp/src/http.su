@@ -1,0 +1,5 @@
+../coreHTTP/dependency/3rdparty/llhttp/src/http.c:11:5:llhttp__before_headers_complete	24	static
+../coreHTTP/dependency/3rdparty/llhttp/src/http.c:37:5:llhttp__after_headers_complete	32	static
+../coreHTTP/dependency/3rdparty/llhttp/src/http.c:95:5:llhttp__after_message_complete	32	static
+../coreHTTP/dependency/3rdparty/llhttp/src/http.c:108:5:llhttp_message_needs_eof	16	static
+../coreHTTP/dependency/3rdparty/llhttp/src/http.c:135:5:llhttp_should_keep_alive	16	static

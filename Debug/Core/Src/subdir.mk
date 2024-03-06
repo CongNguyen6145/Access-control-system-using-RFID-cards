@@ -1,0 +1,57 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../Core/Src/freertos.c \
+../Core/Src/iot_connect.c \
+../Core/Src/main.c \
+../Core/Src/port_control.c \
+../Core/Src/rfid.c \
+../Core/Src/stm32f4xx_hal_msp.c \
+../Core/Src/stm32f4xx_hal_timebase_tim.c \
+../Core/Src/stm32f4xx_it.c \
+../Core/Src/syscalls.c \
+../Core/Src/sysmem.c \
+../Core/Src/system_stm32f4xx.c 
+
+OBJS += \
+./Core/Src/freertos.o \
+./Core/Src/iot_connect.o \
+./Core/Src/main.o \
+./Core/Src/port_control.o \
+./Core/Src/rfid.o \
+./Core/Src/stm32f4xx_hal_msp.o \
+./Core/Src/stm32f4xx_hal_timebase_tim.o \
+./Core/Src/stm32f4xx_it.o \
+./Core/Src/syscalls.o \
+./Core/Src/sysmem.o \
+./Core/Src/system_stm32f4xx.o 
+
+C_DEPS += \
+./Core/Src/freertos.d \
+./Core/Src/iot_connect.d \
+./Core/Src/main.d \
+./Core/Src/port_control.d \
+./Core/Src/rfid.d \
+./Core/Src/stm32f4xx_hal_msp.d \
+./Core/Src/stm32f4xx_hal_timebase_tim.d \
+./Core/Src/stm32f4xx_it.d \
+./Core/Src/syscalls.d \
+./Core/Src/sysmem.d \
+./Core/Src/system_stm32f4xx.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F429xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../Utils/ -I../Drivers/Device -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../LWIP/App -I../LWIP/Target -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/Middlewares/Third_Party/LwIP/src/include" -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/coreHTTP/include" -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/coreHTTP/dependency/3rdparty/llhttp/include" -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/coreHTTP/interface" -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/test/cbmc/include" -I"C:/Users/T14/Documents/laptrinh/stm32/imic_stm32_demo_http_bug_fixed/imic_stm32_demo final 3/imic_stm32_demo final 2/imic_stm32_demo/Drivers/BSP/Components/lan8742" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+
+clean: clean-Core-2f-Src
+
+clean-Core-2f-Src:
+	-$(RM) ./Core/Src/freertos.cyclo ./Core/Src/freertos.d ./Core/Src/freertos.o ./Core/Src/freertos.su ./Core/Src/iot_connect.cyclo ./Core/Src/iot_connect.d ./Core/Src/iot_connect.o ./Core/Src/iot_connect.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/port_control.cyclo ./Core/Src/port_control.d ./Core/Src/port_control.o ./Core/Src/port_control.su ./Core/Src/rfid.cyclo ./Core/Src/rfid.d ./Core/Src/rfid.o ./Core/Src/rfid.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_hal_timebase_tim.cyclo ./Core/Src/stm32f4xx_hal_timebase_tim.d ./Core/Src/stm32f4xx_hal_timebase_tim.o ./Core/Src/stm32f4xx_hal_timebase_tim.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su
+
+.PHONY: clean-Core-2f-Src
+
